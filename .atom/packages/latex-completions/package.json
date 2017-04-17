@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-117018-30028-cvveqj/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-117018-30028-cvveqj/package.tgz",
+        "spec": "/tmp/d-117018-30028-cvveqj/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-117018-30028-1b8cnmt"
+    ]
+  ],
+  "_from": "../d-117018-30028-cvveqj/package.tgz",
+  "_id": "latex-completions@0.3.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/latex-completions",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-117018-30028-cvveqj/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-117018-30028-cvveqj/package.tgz",
+    "spec": "/tmp/d-117018-30028-cvveqj/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117018-30028-cvveqj/package.tgz",
+  "_shasum": "e3b45e4c359f8015606a596178967fbfa93a2ef5",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-117018-30028-cvveqj/package.tgz",
+  "_where": "/tmp/apm-install-dir-117018-30028-1b8cnmt",
+  "bugs": {
+    "url": "https://github.com/JunoLab/atom-latex-completions/issues"
+  },
+  "dependencies": {},
+  "description": "Easy input for unicode characters",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/JunoLab/atom-latex-completions#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/latex-completions",
+  "name": "latex-completions",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "3.0.0": "provide"
+      }
+    }
+  },
+  "readme": "# LaTeX Completions for Atom\n\nIt's simple enough – Latex Completions takes LaTeX character names such as\n`\\alpha` and replaces them with unicode characters like `α`.\n\n![Demo](demo.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunoLab/atom-latex-completions.git"
+  },
+  "version": "0.3.2"
+}

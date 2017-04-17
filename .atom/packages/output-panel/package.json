@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-117213-4274-1gkloik/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-117213-4274-1gkloik/package.tgz",
+        "spec": "/tmp/d-117213-4274-1gkloik/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-117213-4274-1g96ep5"
+    ]
+  ],
+  "_from": "../d-117213-4274-1gkloik/package.tgz",
+  "_id": "output-panel@0.1.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/output-panel",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-117213-4274-1gkloik/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-117213-4274-1gkloik/package.tgz",
+    "spec": "/tmp/d-117213-4274-1gkloik/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117213-4274-1gkloik/package.tgz",
+  "_shasum": "e617ece8418be9ef31d27bb1685e03018635c925",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-117213-4274-1gkloik/package.tgz",
+  "_where": "/tmp/apm-install-dir-117213-4274-1g96ep5",
+  "bugs": {
+    "url": "https://github.com/31i73/atom-output-panel/issues"
+  },
+  "dependencies": {
+    "cross-spawn": "^4.0.0",
+    "xterm": "^1.1.3"
+  },
+  "description": "A bottom output panel for running processes and displaying output",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/31i73/atom-output-panel#readme",
+  "keywords": [
+    "output",
+    "bottom",
+    "panel",
+    "process",
+    "terminal"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "output-panel",
+  "optionalDependencies": {},
+  "providedServices": {
+    "output-panel": {
+      "description": "Allows control of an output panel",
+      "versions": {
+        "0.1.0": "provideOutputPanel"
+      }
+    }
+  },
+  "readme": "# output-panel package\n\nA bottom output panel for running processes and displaying output\n\n![Output Panel screenshot](http://i.imgur.com/e57nAJp.png)\n\n## Commands:\n\n`output-panel:show` - Show the panel  \n`output-panel:hide` - Hide the panel  \n`output-panel:toggle` - Toggle the panel  \n`output-panel:run` - TODO: prompt the user to run a program in the panel  \n`output-panel:stop` - Stop any program currently running in the panel  \n`core:cancel` - Hide the panel  \n\n## Service: `output-panel`\n\nReturns an object with the following functions:\n\n`run(show, path:String, ?args:String[], ?options)` - Run a process in the panel (this will `stop()` any existing, first)\n\n> `show` - If `true` will immediately display the panel. if `\"auto\"` will automatically display the panel if the program displays output. if `false` will leave the panel in its current state.\n\n> `path` - The path to the program to execute\n\n> `args` - Optional. An array of arguments to pass to the program\n\n> `options` - Optional. An options object compatible with `child_process.spawn()`\n\nReturns a `child_process` compatible object of the running process\n\n`stop()` - Stop and process currently running in the panel\n\n`show()` - Display the panel\n\n`hide()` - Hide the panel\n\n`toggle()` - Toggle the panel\n\n`print(line:String)` - Print a `line` of text to the panel\n\n`clear()` - Clear the panel\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/31i73/atom-output-panel.git"
+  },
+  "version": "0.1.4"
+}

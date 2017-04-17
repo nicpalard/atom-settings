@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-117230-56247-1fihk6x/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-117230-56247-1fihk6x/package.tgz",
+        "spec": "/tmp/d-117230-56247-1fihk6x/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-117230-56247-1n5x680"
+    ]
+  ],
+  "_from": "../d-117230-56247-1fihk6x/package.tgz",
+  "_id": "atom-latex@0.7.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-latex",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-117230-56247-1fihk6x/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-117230-56247-1fihk6x/package.tgz",
+    "spec": "/tmp/d-117230-56247-1fihk6x/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117230-56247-1fihk6x/package.tgz",
+  "_shasum": "41e51d5a2e5b6502aae2af9ba10a1fd325424915",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-117230-56247-1fihk6x/package.tgz",
+  "_where": "/tmp/apm-install-dir-117230-56247-1n5x680",
+  "bugs": {
+    "url": "https://github.com/James-Yu/Atom-LaTeX/issues"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "minimap": {
+      "versions": {
+        "^1.0.0": "consumeMinimap"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-message-panel": "^1.3.0",
+    "atom-space-pen-views": "^2.2.0",
+    "etch": "^0.8.0",
+    "glob": "^7.1.1",
+    "hasbin": "^1.2.3",
+    "latex-symbols-list": "^0.1.2",
+    "tmp": "^0.0.31",
+    "ws": "^1.1.1"
+  },
+  "description": "The only LaTeX package you need for typesetting with Atom.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/James-Yu/Atom-LaTeX#readme",
+  "keywords": [
+    "latex",
+    "compile",
+    "preview",
+    "synctex",
+    "highlight"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-latex",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "readme": "# Atom-LaTeX package\n\nAtom-LaTeX is an extension for [Atom.io](https://atom.io/), aiming to provide all-in-one features and utilities for latex typesetting with Atom.\n\n## Features\n\nAtom-LaTeX is currently under active development. More features coming soon.\nSome features have screenshots/screencasts available [here](https://github.com/James-Yu/Atom-LaTeX/blob/master/GALLERY.md). Have a check!\n\n- Compile LaTeX with BibTeX\n- Preview PDF with build-in viewer\n- Parse LaTeX compiling log\n- Autocomplete\n- Syntax highlight\n- Direct and reverse SyncTeX\n\nIf you figured out some features neat but not included, [create an issue](https://github.com/James-Yu/Atom-LaTeX/issues/new)!\n\n## Why another LaTeX package?\n\nUnification provides seamless experience. Aiming to make it work and work perfectly.\n\n## Requirements\n\n- LaTeX distribution in system PATH. For example, [TeX Live](https://www.tug.org/texlive/).\n  - [MiKTeX](https://miktex.org/) does not ship with SyncTeX, but basic build and preview and non-SyncTeX related features work fine.\n- [Set LaTeX root file](#root_file).\n\n## Installation\n\nInstalling Atom-LaTeX is simple. You can find it in [the atom.io package registry](https://atom.io/packages/atom-latex), or simply run `apm install atom-latex` in command line.\n\nFor cutting edge features or changes, you can check out this repository to the Atom package folder:\n- Windows `%USERPROFILE%\\.atom\\packages`\n- Mac/Linux `$HOME/.atom/packages`\n\n## Usage\n\nAll commands can be invoked from `Package`-`Atom-LaTeX` menu or by command palette. Alternatively, keybinds are provided. Each command is invoked if the two key combinations are pressed sequentially.\n\nFor reverse SyncTeX from PDF to LaTeX, use <kbd>ctrl</kbd>+<kbd>Mouse Left Click</kbd> in the PDF viewer to reveal the line in editor.\n\nMac OS users can use <kbd>command</kbd> key as a replacement of <kbd>ctrl</kbd>.\n\n| Command               | Default Keybind                             | Function |\n|-----------------------|---------------------------------------------|----------|\n| `atom-latex:build`      | <kbd>ctrl</kbd>+<kbd>L</kbd> <kbd>ctrl</kbd>+<kbd>B</kbd> | Build LaTeX file. |\n| `atom-latex:build-here` | <kbd>ctrl</kbd>+<kbd>L</kbd> <kbd>ctrl</kbd>+<kbd>H</kbd> | Build LaTeX using active text editor file if possible. |\n| `atom-latex:clean`      | <kbd>ctrl</kbd>+<kbd>L</kbd> <kbd>ctrl</kbd>+<kbd>C</kbd> | Clean LaTeX auxillary files. |\n| `atom-latex:preview`    | <kbd>ctrl</kbd>+<kbd>L</kbd> <kbd>ctrl</kbd>+<kbd>P</kbd> | Preview generated PDF file with in-browser viewer. |\n| `atom-latex:kill`       | <kbd>ctrl</kbd>+<kbd>L</kbd> <kbd>ctrl</kbd>+<kbd>K</kbd> | Terminate current LaTeX building process. |\n| `atom-latex:synctex`    | <kbd>ctrl</kbd>+<kbd>L</kbd> <kbd>ctrl</kbd>+<kbd>S</kbd> | Direct SyncTeX from the current cursor position. |\n| `atom-latex:toggle-panel`   | <kbd>ctrl</kbd>+<kbd>L</kbd> <kbd>ctrl</kbd>+<kbd>L</kbd> | Toggle Atom-LaTeX panel display. |\n\n## Project-based Configuration\nAtom currently does not provide per-project configuration. Atom-LaTeX uses a `.latexcfg` file under the root directory of LaTeX project to partially control its behavior. Following is a complete example of its content.\n   ```\n   {\n     \"root\" : \"\\path\\to\\root\\file.tex\",\n     \"toolchain\" : \"%TEX %ARG %DOC\",\n     \"latex_ext\": [\".tikz\", \".Rnw\"]\n   }\n   ```\nIf a key is set, the config will overwrite the global one in atom settings.\n\n## How To\n### <a name=\"root_file\"></a>Set LaTeX root file\nLaTeX root file is essential to Atom-LaTeX. Building, preview, autocompletion, and more features rely on its proper configuration. You can select to manually set the file by clicking the `home` icon on the control bar, or let Atom-LaTeX automatically find it given proper project structures:\n   ```\n   { \"root\" : \"\\path\\to\\root\\file.tex\" }\n   ```\n\n1. Create a `.latexcfg` file at the root directory of your project. The file should contain a json object with `root` key set to the root file. An example:\n   ```\n   { \"root\" : \"\\path\\to\\root\\file.tex\" }\n   ```\n2. Add a magic comment `% !TEX root = \\path\\to\\root\\file.tex` to all of your LaTeX source file. The path can be absolute or relative.\n3. Open the root file and use `Build Here` command. Alternatively, use `Build LaTeX from active editor` menu item.\n4. If all previous checks fail to find a root file, Atom-LaTeX will iterate through all LaTeX files in the root directory.\n\nYou can choose one or multiple methods stated above to set the root file.\n\n### Set per-project LaTeX toolchain\nLaTeX toolchain can be controlled by either atom configuration or `.latexcfg` file under root directory. If LaTeX projects need special toolchain, one can add a `toolchain` key to this file. An example:\n```\n{ \"toolchain\" : \"%TEX %ARG %DOC\" }\n```\nThis example will only use the defined compiler in atom configuration to build the project. Alternatively, you can also have this example that provides the same functionality:\n```\n{ \"toolchain\" : \"pdflatex -synctex=1 -interaction=nonstopmode -file-line-error -pdf %DOC\" }\n```\n\n### Support non-tex files\nAtom-LaTeX has limited support to LaTeX source files with a non-`.tex` extension. To consider such files as valid LaTeX documents, one can add a `latex_ext` key to the `.latexcfg` local configuration file. An example:\n```\n{ \"latex_ext\": [\".tikz\", \".Rnw\"] }\n```\nNote that the value must be a JSON array, even when there is only one alternative file extension.\n\n### Enable spell check\n- Open setting panel of build-in package `spell-check`.\n- Add `text.tex.latex` to the `Grammars` edit box.\n\n## Contributing\n\n- [Creat issues](https://github.com/James-Yu/Atom-LaTeX/issues) for bugs\n- [Fork and PR](https://github.com/James-Yu/Atom-LaTeX/pulls) for fixes\n- Thank you so much!\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Yu/Atom-LaTeX.git"
+  },
+  "version": "0.7.4"
+}

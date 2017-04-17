@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-11713-4730-5vqul1/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11713-4730-5vqul1/package.tgz",
+        "spec": "/tmp/d-11713-4730-5vqul1/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11713-4730-1ya7uhc"
+    ]
+  ],
+  "_from": "../d-11713-4730-5vqul1/package.tgz",
+  "_id": "language-doxygen@0.2.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/language-doxygen",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-11713-4730-5vqul1/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11713-4730-5vqul1/package.tgz",
+    "spec": "/tmp/d-11713-4730-5vqul1/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11713-4730-5vqul1/package.tgz",
+  "_shasum": "eac302e60313e9a0dd018c2e9e59b7e88483bb3d",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-11713-4730-5vqul1/package.tgz",
+  "_where": "/tmp/apm-install-dir-11713-4730-1ya7uhc",
+  "bugs": {
+    "url": "https://github.com/thibault-martinez/language-doxygen/issues"
+  },
+  "dependencies": {},
+  "description": "Doxyfile syntax highlighting",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/thibault-martinez/language-doxygen#readme",
+  "license": "MIT",
+  "name": "language-doxygen",
+  "optionalDependencies": {},
+  "readme": "# Atom Doxygen syntax highlighting\n\nAtom syntax highlighting for Doxyfiles.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibault-martinez/language-doxygen.git"
+  },
+  "version": "0.2.1"
+}

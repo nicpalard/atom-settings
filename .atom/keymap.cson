@@ -1,0 +1,2 @@
+'.platform-linux atom-workspace, .platform-win32 atom-workspace':
+  'ctrl-+': 'platformio-ide-terminal:toggle'

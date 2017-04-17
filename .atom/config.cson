@@ -1,0 +1,31 @@
+"*":
+  "atom-latex":
+    toolchain: "latexmk toolchain"
+  core:
+    disabledPackages: [
+      "language-csharp"
+      "language-objective-c"
+      "linter"
+      "latex"
+      "language-latex"
+      "latex-completions"
+      "latexer"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 13
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softTabs: false
+    tabLength: 4
+    tabType: "hard"
+  "exception-reporting":
+    userId: "922b05a1-d37f-04ec-6265-9d282525d917"
+  "latex-autocomplete": {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+".bibtex.text":
+  editor:
+    autoIndent: false

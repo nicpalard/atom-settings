@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-11717-49911-1ufb056/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11717-49911-1ufb056/package.tgz",
+        "spec": "/tmp/d-11717-49911-1ufb056/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11717-49911-1kuy1y3"
+    ]
+  ],
+  "_from": "../d-11717-49911-1ufb056/package.tgz",
+  "_id": "unsaved-changes@0.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/unsaved-changes",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-11717-49911-1ufb056/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11717-49911-1ufb056/package.tgz",
+    "spec": "/tmp/d-11717-49911-1ufb056/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11717-49911-1ufb056/package.tgz",
+  "_shasum": "d5f253de57820f98d04ca13aec09f4e9a849c251",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-11717-49911-1ufb056/package.tgz",
+  "_where": "/tmp/apm-install-dir-11717-49911-1kuy1y3",
+  "activationCommands": {
+    "atom-workspace": "unsaved-changes:show"
+  },
+  "bugs": {
+    "url": "https://github.com/Ge-Bra/unsaved-changes/issues"
+  },
+  "dependencies": {
+    "atom-message-panel": "^1.2.4",
+    "diff": "^1.4.0"
+  },
+  "description": "Show unsaved changes in active editor",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Ge-Bra/unsaved-changes#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/unsaved-changes",
+  "name": "unsaved-changes",
+  "optionalDependencies": {},
+  "readme": "# Unsaved Changes\n\n\nShows changes in your active buffer via a panel at the bottom of the editor.\nSimilar to \"Show Unsaved Changes\" in Sublime Text.\n\n![preview](https://cloud.githubusercontent.com/assets/12617169/7885149/496b1540-05f0-11e5-9a91-b85a4e6ad2f4.png)\n\n## Installation\n\nRun the following command:\n```sh\napm install unsaved-changes\n```\nOr find the package in **Settings** &rarr; **Install** and search for \"**unsaved-changes**\"\n\n## Usage\n\nIn Menu, `Packages => Unsaved Changes => Show`\n\nIn context-menu, `Unsaved Changes`\n\nIn Command Palette, type `Unsaved Changes`\n\nKeybinding, `ctrl + alt + u` (Mac: `cmd + alt + u`)\n\nAdds will be shown with a green background, removes with a red background.\nA few lines of surrounding unchanged text are also shown for context.\nA yellow line separates hunks.\n\n**Note: Compares whitespace.**\n\n## License\n\n[MIT](LICENSE.md) © Ge-Bra\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ge-Bra/unsaved-changes.git"
+  },
+  "version": "0.1.0"
+}
